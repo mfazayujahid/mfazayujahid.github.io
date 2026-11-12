@@ -337,6 +337,7 @@
 
         /* Accessibility: Reduced Motion Support */
         @media (prefers-reduced-motion: reduce) {
+
             .animate-marquee,
             .telegraph-marquee {
                 animation: none !important;
@@ -356,7 +357,9 @@
 
         /* Mobile Typography & Layout Optimization */
         @media (max-width: 768px) {
-            body, .font-body {
+
+            body,
+            .font-body {
                 font-size: 16px !important;
                 line-height: 1.6 !important;
             }
@@ -455,19 +458,19 @@
             border-color: #42382e !important;
         }
 
-        
+
         body.evening-edition .drop-cap::first-letter {
             color: #fbf6ee !important;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        
+
         body.evening-edition .bg-stone-200 {
             background-color: #383028 !important;
             color: #fbf6ee !important;
         }
 
-        
+
         /* Page Navigation Bar Styling & Evening Edition Hover Overrides */
         .page-nav-link {
             transition: all 0.2s ease-in-out;
@@ -534,7 +537,7 @@
             background-color: #383028 !important;
         }
 
-        body.evening-edition #project-modal > div {
+        body.evening-edition #project-modal>div {
             background-color: #24201c !important;
             border-color: #5a4d3f !important;
             color: #e8ded2 !important;
@@ -636,19 +639,23 @@
                 <!-- Interactive Ticker Motion Play/Pause Accessibility Control -->
                 <button id="ticker-toggle-btn" onclick="toggleTickerAnimation()"
                     class="hover:text-amber-300 transition-colors p-0.5 text-[10px] font-bold border border-stone-700 bg-stone-900 px-1.5 flex items-center gap-1 shrink-0 rounded-sm cursor-pointer min-h-[30px]"
-                    title="Pause or Resume Ticker Motion"
-                    aria-label="Pause or resume ticker animation">
+                    title="Pause or Resume Ticker Motion" aria-label="Pause or resume ticker animation">
                     <i data-lucide="pause" id="ticker-icon" class="w-3 h-3"></i>
                     <span id="ticker-status-text" class="hidden sm:inline" data-i18n="ticker_pause_btn">PAUSE</span>
                 </button>
 
                 <div class="overflow-hidden whitespace-nowrap w-full">
                     <div class="animate-marquee telegraph-marquee text-xs tracking-wide">
-                        <span class="mr-8" data-i18n="ticker_item_1">★ DISPATCH: Refactored legacy factory ERP into Node.js microservices, dropping query latency from 1.4s to 68ms.</span>
-                        <span class="mr-8" data-i18n="ticker_item_2">★ DISPATCH: Snap-to-Route GPS engine with Valhalla OSM cuts fleet fuel waste by 18%.</span>
-                        <span class="mr-8" data-i18n="ticker_item_3">★ MARKET BULLETIN: E-Procurement platform with BigQuery data lake accelerates tender turnaround by 71%.</span>
-                        <span class="mr-8" data-i18n="ticker_item_1">★ DISPATCH: Refactored legacy factory ERP into Node.js microservices, dropping query latency from 1.4s to 68ms.</span>
-                        <span class="mr-8" data-i18n="ticker_item_2">★ DISPATCH: Snap-to-Route GPS engine with Valhalla OSM cuts fleet fuel waste by 18%.</span>
+                        <span class="mr-8" data-i18n="ticker_item_1">★ DISPATCH: Refactored legacy factory ERP into
+                            Node.js microservices, dropping query latency from 1.4s to 68ms.</span>
+                        <span class="mr-8" data-i18n="ticker_item_2">★ DISPATCH: Snap-to-Route GPS engine with Valhalla
+                            OSM cuts fleet fuel waste by 18%.</span>
+                        <span class="mr-8" data-i18n="ticker_item_3">★ MARKET BULLETIN: E-Procurement platform with
+                            BigQuery data lake accelerates tender turnaround by 71%.</span>
+                        <span class="mr-8" data-i18n="ticker_item_1">★ DISPATCH: Refactored legacy factory ERP into
+                            Node.js microservices, dropping query latency from 1.4s to 68ms.</span>
+                        <span class="mr-8" data-i18n="ticker_item_2">★ DISPATCH: Snap-to-Route GPS engine with Valhalla
+                            OSM cuts fleet fuel waste by 18%.</span>
                     </div>
                 </div>
             </div>
@@ -669,11 +676,13 @@
                     title="Switch between Daylight Broadsheet and Night Reading Light"
                     aria-label="Toggle Night Reading Light Mode">
                     <i data-lucide="lamp" id="edition-icon" class="w-3.5 h-3.5 text-amber-300"></i>
-                    <span id="edition-status-text" class="hidden sm:inline font-bold" data-i18n="edition_btn_text">NIGHT READING</span>
+                    <span id="edition-status-text" class="hidden sm:inline font-bold" data-i18n="edition_btn_text">NIGHT
+                        READING</span>
                 </button>
 
                 <!-- Download PDF CV -->
-                <a href="ref/CV - Muhammad Faza Yujahid.pdf" download="CV - Muhammad Faza Yujahid.pdf" target="_blank" rel="noopener noreferrer"
+                <a href="ref/CV - Muhammad Faza Yujahid.pdf" download="CV - Muhammad Faza Yujahid.pdf" target="_blank"
+                    rel="noopener noreferrer"
                     class="hidden md:flex items-center gap-1 hover:text-amber-300 transition-colors border-r border-stone-700 pr-3 cursor-pointer min-h-[30px]"
                     title="Download Muhammad Faza Yujahid's CV (PDF)">
                     <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
@@ -749,7 +758,8 @@
             <div
                 class="border-t-2 border-b-2 border-paper-border py-1 my-2 flex items-center justify-between font-typewriter text-xs font-bold uppercase tracking-wider">
                 <span data-i18n="divider_sec_a">❖ SECTION A: FRONT DISPATCH</span>
-                <span class="hidden sm:inline" data-i18n="divider_center">❧ ESTABLISHED IN INDONESIA • FORGING ROBUST SYSTEMS ❧</span>
+                <span class="hidden sm:inline" data-i18n="divider_center">❧ ESTABLISHED IN INDONESIA • FORGING ROBUST
+                    SYSTEMS ❧</span>
                 <span data-i18n="divider_sec_d">SECTION D: CLASSIFIEDS ❖</span>
             </div>
 
@@ -796,7 +806,8 @@
                     </h2>
                     <p class="font-typewriter text-xs sm:text-sm text-paper-muted mt-2 max-w-4xl mx-auto italic"
                         data-i18n="front_subheadline">
-                        Five years of untangling legacy monoliths, writing high-throughput backend services in Go and Node.js, and shipping reliable web applications.
+                        Five years of untangling legacy monoliths, writing high-throughput backend services in Go and
+                        Node.js, and shipping reliable web applications.
                     </p>
                 </div>
 
@@ -819,11 +830,8 @@
                             <div
                                 class="relative w-full aspect-[4/5] bg-stone-200 border border-stone-400 overflow-hidden halftone-box flex items-center justify-center">
 
-                                <img id="profile-photo"
-                                    src="assets/img/faza.jpg"
-                                    alt="Muhammad Faza Yujahid - Full-Stack Software Engineer"
-                                    width="280"
-                                    height="340"
+                                <img id="profile-photo" src="assets/img/faza.jpg"
+                                    alt="Muhammad Faza Yujahid - Full-Stack Software Engineer" width="280" height="340"
                                     fetchpriority="high"
                                     class="w-full h-full object-cover grayscale contrast-125 object-top" />
 
@@ -847,21 +855,26 @@
                                 <i data-lucide="map-pin" class="w-3.5 h-3.5 text-paper-red"></i>
                                 <span data-i18n="coordinates_title">OFFICIAL CORRESPONDENCE</span>
                             </div>
-                            <p><strong data-i18n="coord_residence">RESIDENCE:</strong> <span data-i18n="coord_residence_val">Bandung, West Java, Indonesia</span></p>
-                            <p><strong data-i18n="coord_dispatch">DISPATCH:</strong> <a href="mailto:mfazayujahid@gmail.com"
+                            <p><strong data-i18n="coord_residence">RESIDENCE:</strong> <span
+                                    data-i18n="coord_residence_val">Bandung, West Java, Indonesia</span></p>
+                            <p><strong data-i18n="coord_dispatch">DISPATCH:</strong> <a
+                                    href="mailto:mfazayujahid@gmail.com"
                                     class="underline hover:text-paper-red">mfazayujahid@gmail.com</a></p>
-                            <p><strong data-i18n="coord_github">GITHUB:</strong> <a href="https://github.com/mfazayujahid"
-                                    target="_blank" rel="noopener noreferrer"
+                            <p><strong data-i18n="coord_github">GITHUB:</strong> <a
+                                    href="https://github.com/mfazayujahid" target="_blank" rel="noopener noreferrer"
                                     class="underline hover:text-paper-red">github.com/mfazayujahid</a></p>
-                            <p><strong data-i18n="coord_linkedin">LINKEDIN:</strong> <a href="https://www.linkedin.com/in/mfazayujahid/"
-                                    target="_blank" rel="noopener noreferrer"
+                            <p><strong data-i18n="coord_linkedin">LINKEDIN:</strong> <a
+                                    href="https://www.linkedin.com/in/mfazayujahid/" target="_blank"
+                                    rel="noopener noreferrer"
                                     class="underline hover:text-paper-red">/in/mfazayujahid</a></p>
                         </div>
 
                         <!-- Quick Quote / Manifesto -->
                         <div
                             class="border-l-4 border-paper-red pl-3 py-1 font-headline italic text-sm text-stone-800 leading-snug">
-                            <span data-i18n="profile_quote">"Good engineering isn't about clever code. It's about building systems that stay fast, clear, and easy to maintain long after you deploy them."</span>
+                            <span data-i18n="profile_quote">"Good engineering isn't about clever code. It's about
+                                building systems that stay fast, clear, and easy to maintain long after you deploy
+                                them."</span>
                         </div>
 
                     </div>
@@ -882,15 +895,27 @@
                         </h3>
 
                         <!-- Drop Cap Article Body (Human, Factual, Authentic Tone) -->
-                        <div class="font-body text-base text-stone-900 leading-relaxed text-justify space-y-3 editorial-measure">
+                        <div
+                            class="font-body text-base text-stone-900 leading-relaxed text-justify space-y-3 editorial-measure">
                             <p class="drop-cap" data-i18n="story_p1">
-                                Muhammad Faza Yujahid builds backend APIs and fullstack web applications from Bandung, Indonesia. Over the past five years, his engineering focus has centered on production systems: refactoring brittle legacy monoliths into clean services, cutting operational costs through better routing algorithms, and building data-heavy web tools that teams actually enjoy using.
+                                Muhammad Faza Yujahid builds backend APIs and fullstack web applications from Bandung,
+                                Indonesia. Over the past five years, his engineering focus has centered on production
+                                systems: refactoring brittle legacy monoliths into clean services, cutting operational
+                                costs through better routing algorithms, and building data-heavy web tools that teams
+                                actually enjoy using.
                             </p>
                             <p data-i18n="story_p2">
-                                On the backend, Faza works daily with Node.js, Go, and PostgreSQL. Whether untangling decades-old procedural code into modular microservices or writing real-time ingestion pipelines, he prioritizes code readability, database indexing, and deterministic performance over hype. On the frontend, he builds snappy interfaces with React, Vue, Next.js, and Tailwind.
+                                On the backend, Faza works daily with Node.js, Go, and PostgreSQL. Whether untangling
+                                decades-old procedural code into modular microservices or writing real-time ingestion
+                                pipelines, he prioritizes code readability, database indexing, and deterministic
+                                performance over hype. On the frontend, he builds snappy interfaces with React, Vue,
+                                Next.js, and Tailwind.
                             </p>
                             <p data-i18n="story_p3">
-                                His recent work spans logistics and enterprise operations: integrating Valhalla OpenStreetMap to eliminate GPS coordinate noise for commercial fleets, replacing slow manual purchasing with an automated e-procurement suite backed by Google BigQuery, and automating factory purchase order alerts over WhatsApp.
+                                His recent work spans logistics and enterprise operations: integrating Valhalla
+                                OpenStreetMap to eliminate GPS coordinate noise for commercial fleets, replacing slow
+                                manual purchasing with an automated e-procurement suite backed by Google BigQuery, and
+                                automating factory purchase order alerts over WhatsApp.
                             </p>
                         </div>
 
@@ -899,7 +924,8 @@
                             <button onclick="openProjectModal('erp_modernization')"
                                 class="w-full bg-paper-red text-white hover:bg-stone-900 font-typewriter text-xs font-bold py-2.5 px-3 transition-colors flex items-center justify-center gap-2 shadow-sm cursor-pointer min-h-[40px]">
                                 <i data-lucide="layers" class="w-4 h-4"></i>
-                                <span data-i18n="read_lead_dispatch_btn">INSPECT ERP SYSTEM ARCHITECTURE & BENCHMARKS ➔</span>
+                                <span data-i18n="read_lead_dispatch_btn">INSPECT ERP SYSTEM ARCHITECTURE & BENCHMARKS
+                                    ➔</span>
                             </button>
                         </div>
 
@@ -908,22 +934,27 @@
                             class="border-rule-thick-thin my-4 py-2 grid grid-cols-3 gap-2 text-center font-typewriter tabular-nums">
                             <div>
                                 <span class="block text-2xl font-bold font-headline text-paper-ink">5+</span>
-                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_years">YEARS EXP</span>
+                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_years">YEARS
+                                    EXP</span>
                             </div>
                             <div class="border-l border-r border-paper-border">
                                 <span class="block text-2xl font-bold font-headline text-paper-red">100%</span>
-                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_delivery">API AUTOMATION</span>
+                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_delivery">API
+                                    AUTOMATION</span>
                             </div>
                             <div>
                                 <span class="block text-2xl font-bold font-headline text-paper-ink">UNIBI</span>
-                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_degree">B.INF SYSTEMS</span>
+                                <span class="text-[10px] text-stone-600 uppercase" data-i18n="stat_degree">B.INF
+                                    SYSTEMS</span>
                             </div>
                         </div>
 
                         <div class="p-3 bg-paper-light border border-paper-border text-xs font-typewriter">
-                            <span class="font-bold text-paper-red uppercase" data-i18n="bulletin_tag">TECHNICAL BULLETIN:</span>
+                            <span class="font-bold text-paper-red uppercase" data-i18n="bulletin_tag">TECHNICAL
+                                BULLETIN:</span>
                             <p class="mt-1 text-stone-800" data-i18n="bulletin_content">
-                                Core competence in production databases (PostgreSQL, MySQL), analytics pipelines (Google BigQuery), and Git workflows for cross-functional engineering teams.
+                                Core competence in production databases (PostgreSQL, MySQL), analytics pipelines (Google
+                                BigQuery), and Git workflows for cross-functional engineering teams.
                             </p>
                         </div>
 
@@ -957,7 +988,8 @@
 
                         <!-- Architectural Quick Dispatches Box -->
                         <div class="border border-paper-border p-3 bg-paper-aged/40 space-y-2 font-typewriter text-xs">
-                            <div class="font-bold uppercase border-b border-paper-border pb-1 flex justify-between items-center">
+                            <div
+                                class="font-bold uppercase border-b border-paper-border pb-1 flex justify-between items-center">
                                 <span data-i18n="schematics_title">SYSTEM SCHEMATICS</span>
                                 <span class="text-[10px] text-paper-red" data-i18n="blueprints_tag">BLUEPRINTS</span>
                             </div>
@@ -985,11 +1017,13 @@
 
                             <div class="font-typewriter text-xs space-y-2">
                                 <div>
-                                    <span class="font-bold text-paper-ink" data-i18n="skill_backend_label">BACKEND:</span>
+                                    <span class="font-bold text-paper-ink"
+                                        data-i18n="skill_backend_label">BACKEND:</span>
                                     <p class="text-stone-700">Node.js (NestJS, Express), Go (Golang), Laravel</p>
                                 </div>
                                 <div class="border-t border-dotted border-stone-400 pt-1.5">
-                                    <span class="font-bold text-paper-ink" data-i18n="skill_frontend_label">FRONTEND:</span>
+                                    <span class="font-bold text-paper-ink"
+                                        data-i18n="skill_frontend_label">FRONTEND:</span>
                                     <p class="text-stone-700">NextJS, ReactJS, NuxtJS, VueJS, Tailwind</p>
                                 </div>
                                 <div class="border-t border-dotted border-stone-400 pt-1.5">
@@ -997,7 +1031,8 @@
                                     <p class="text-stone-700">PostgreSQL, MySQL, MariaDB</p>
                                 </div>
                                 <div class="border-t border-dotted border-stone-400 pt-1.5">
-                                    <span class="font-bold text-paper-ink" data-i18n="skill_cloud_label">ANALYTICS & CLOUD:</span>
+                                    <span class="font-bold text-paper-ink" data-i18n="skill_cloud_label">ANALYTICS &
+                                        CLOUD:</span>
                                     <p class="text-stone-700">Google BigQuery, Valhalla OSM, Git</p>
                                 </div>
                             </div>
@@ -1026,8 +1061,10 @@
                 </div>
 
                 <!-- Bottom Page Navigation Hint -->
-                <div class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
-                    <span class="text-stone-500 italic" data-i18n="page_1_of_4_tag">Page 1 of 4 • Front Page Edition</span>
+                <div
+                    class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
+                    <span class="text-stone-500 italic" data-i18n="page_1_of_4_tag">Page 1 of 4 • Front Page
+                        Edition</span>
                     <button onclick="turnToPage(2)"
                         class="text-paper-red hover:underline font-bold flex items-center gap-1 cursor-pointer min-h-[36px]">
                         <span data-i18n="next_page_prompt_1">Turn to Section B (Experience) ➔</span>
@@ -1058,7 +1095,8 @@
                                 PROFESSIONAL EXPERIENCE & ENTERPRISE TRACK RECORD
                             </h2>
                         </div>
-                        <div class="font-typewriter text-xs text-stone-600 max-w-xs text-right hidden md:block" data-i18n="exp_subquote">
+                        <div class="font-typewriter text-xs text-stone-600 max-w-xs text-right hidden md:block"
+                            data-i18n="exp_subquote">
                             "A continuous trajectory of building high-availability backends and responsive web systems."
                         </div>
                     </div>
@@ -1072,39 +1110,48 @@
                         <div class="flex justify-between items-baseline border-b-2 border-stone-800 pb-1.5">
                             <span class="font-typewriter text-xs font-bold bg-paper-red text-white px-2 py-0.5"
                                 data-i18n="exp1_badge">CURRENT APPOINTMENT</span>
-                            <span class="font-typewriter text-xs font-bold" data-i18n="exp1_period">2025 — PRESENT</span>
+                            <span class="font-typewriter text-xs font-bold" data-i18n="exp1_period">2025 —
+                                PRESENT</span>
                         </div>
 
                         <h3 class="font-headline font-bold text-2xl text-paper-ink leading-tight"
                             data-i18n="exp1_title">
                             Backend Developer
                         </h3>
-                        <div
-                            class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
+                        <div class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
                             data-i18n="exp1_company">
                             PT Mulya Kencana Metalindo • Bandung
                         </div>
 
                         <p class="font-body text-sm text-stone-800 italic" data-i18n="exp1_lead">
-                            Serving as backend architect powering enterprise ERP systems for industrial metal manufacturing operations.
+                            Serving as backend architect powering enterprise ERP systems for industrial metal
+                            manufacturing operations.
                         </p>
 
                         <ul class="font-body text-sm text-stone-900 space-y-2 list-none">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp1_bullet1">Design and develop scalable API endpoints for enterprise ERP systems engineered around cross-functional manufacturing and inventory requirements.</span>
+                                <span data-i18n="exp1_bullet1">Design and develop scalable API endpoints for enterprise
+                                    ERP systems engineered around cross-functional manufacturing and inventory
+                                    requirements.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp1_bullet2">Modernized legacy Delphi procedures into performant, modular JavaScript functions, substantially improving system maintainability and computing throughput.</span>
+                                <span data-i18n="exp1_bullet2">Modernized legacy Delphi procedures into performant,
+                                    modular JavaScript functions, substantially improving system maintainability and
+                                    computing throughput.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp1_bullet3">Integrated third-party WhatsApp API into the core messaging service to automate critical purchase orders, transactional receipts, and communication pipelines.</span>
+                                <span data-i18n="exp1_bullet3">Integrated third-party WhatsApp API into the core
+                                    messaging service to automate critical purchase orders, transactional receipts, and
+                                    communication pipelines.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp1_bullet4">Developed a high-precision 'snap-to-route' geolocation service using Valhalla OSM to calculate exact delivery fuel costs and optimize logistics fleets.</span>
+                                <span data-i18n="exp1_bullet4">Developed a high-precision 'snap-to-route' geolocation
+                                    service using Valhalla OSM to calculate exact delivery fuel costs and optimize
+                                    logistics fleets.</span>
                             </li>
                         </ul>
 
@@ -1123,7 +1170,8 @@
                         </div>
 
                         <div class="pt-2 border-t border-paper-border flex flex-wrap gap-1 text-[11px] font-typewriter">
-                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Node.js / Express</span>
+                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Node.js /
+                                Express</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">PostgreSQL</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Valhalla OSM</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">WhatsApp API</span>
@@ -1142,8 +1190,7 @@
                             data-i18n="exp2_title">
                             Fullstack Web Developer
                         </h3>
-                        <div
-                            class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
+                        <div class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
                             data-i18n="exp2_company">
                             Dimy Tech • Bandung
                         </div>
@@ -1155,15 +1202,20 @@
                         <ul class="font-body text-sm text-stone-900 space-y-2 list-none">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp2_bullet1">Developed a comprehensive web-based E-Procurement application, streamlining corporate sourcing and digital procurement of critical goods and services.</span>
+                                <span data-i18n="exp2_bullet1">Developed a comprehensive web-based E-Procurement
+                                    application, streamlining corporate sourcing and digital procurement of critical
+                                    goods and services.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp2_bullet2">Engineered real-time data analytics dashboards and corporate reporting features utilizing generated data insights extracted from Google BigQuery data lakes.</span>
+                                <span data-i18n="exp2_bullet2">Engineered real-time data analytics dashboards and
+                                    corporate reporting features utilizing generated data insights extracted from Google
+                                    BigQuery data lakes.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp2_bullet3">Built unified frontend state flows and RESTful APIs, keeping response times under one second for multi-tenant vendor bids.</span>
+                                <span data-i18n="exp2_bullet3">Built unified frontend state flows and RESTful APIs,
+                                    keeping response times under one second for multi-tenant vendor bids.</span>
                             </li>
                         </ul>
 
@@ -1180,7 +1232,8 @@
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">ReactJS</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Google BigQuery</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Node.js</span>
-                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Analytics Pipelines</span>
+                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Analytics
+                                Pipelines</span>
                         </div>
                     </article>
 
@@ -1189,15 +1242,15 @@
                         <div class="flex justify-between items-baseline border-b-2 border-stone-800 pb-1.5">
                             <span class="font-typewriter text-xs font-bold bg-stone-700 text-white px-2 py-0.5"
                                 data-i18n="exp3_badge">DEVELOPMENT INTERNSHIP</span>
-                            <span class="font-typewriter text-xs font-bold" data-i18n="exp3_period">MAR 2023 — JUL 2023</span>
+                            <span class="font-typewriter text-xs font-bold" data-i18n="exp3_period">MAR 2023 — JUL
+                                2023</span>
                         </div>
 
                         <h3 class="font-headline font-bold text-2xl text-paper-ink leading-tight"
                             data-i18n="exp3_title">
                             Web Developer (Intern)
                         </h3>
-                        <div
-                            class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
+                        <div class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
                             data-i18n="exp3_company">
                             Millennia Solusi Informatika • Bandung
                         </div>
@@ -1209,11 +1262,15 @@
                         <ul class="font-body text-sm text-stone-900 space-y-2 list-none">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp3_bullet1">Designed and developed an internal Project Management System modeled after Jira agile workflows, complete with Kanban boards, sprint tracking, and ticket lifecycle state machines.</span>
+                                <span data-i18n="exp3_bullet1">Designed and developed an internal Project Management
+                                    System modeled after Jira agile workflows, complete with Kanban boards, sprint
+                                    tracking, and ticket lifecycle state machines.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp3_bullet2">Collaborated directly with engineering leads to formulate clean API contracts, automated notifications, and interactive status reporting.</span>
+                                <span data-i18n="exp3_bullet2">Collaborated directly with engineering leads to formulate
+                                    clean API contracts, automated notifications, and interactive status
+                                    reporting.</span>
                             </li>
                         </ul>
 
@@ -1229,7 +1286,8 @@
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">VueJS</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">ExpressJS</span>
                             <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">PostgreSQL</span>
-                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Kanban Architecture</span>
+                            <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Kanban
+                                Architecture</span>
                         </div>
                     </article>
 
@@ -1238,15 +1296,15 @@
                         <div class="flex justify-between items-baseline border-b-2 border-stone-800 pb-1.5">
                             <span class="font-typewriter text-xs font-bold bg-stone-700 text-white px-2 py-0.5"
                                 data-i18n="exp4_badge">FOUNDATIONAL INTERNSHIP</span>
-                            <span class="font-typewriter text-xs font-bold" data-i18n="exp4_period">JAN 2019 — MAR 2019</span>
+                            <span class="font-typewriter text-xs font-bold" data-i18n="exp4_period">JAN 2019 — MAR
+                                2019</span>
                         </div>
 
                         <h3 class="font-headline font-bold text-2xl text-paper-ink leading-tight"
                             data-i18n="exp4_title">
                             Web Developer (Intern)
                         </h3>
-                        <div
-                            class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
+                        <div class="font-typewriter text-xs text-stone-700 font-bold tracking-wider uppercase border-b border-paper-border pb-1"
                             data-i18n="exp4_company">
                             PT Charisma Persada Informatika • Bandung
                         </div>
@@ -1258,11 +1316,13 @@
                         <ul class="font-body text-sm text-stone-900 space-y-2 list-none">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp4_bullet1">Developed a custom Content Management System (CMS) strictly tailored for multi-branch corporate entities.</span>
+                                <span data-i18n="exp4_bullet1">Developed a custom Content Management System (CMS)
+                                    strictly tailored for multi-branch corporate entities.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-paper-red text-base leading-none">▪</span>
-                                <span data-i18n="exp4_bullet2">Engineered the Customer Water Meter Management module to monitor utility usage, billing cycles, and consumption trends.</span>
+                                <span data-i18n="exp4_bullet2">Engineered the Customer Water Meter Management module to
+                                    monitor utility usage, billing cycles, and consumption trends.</span>
                             </li>
                         </ul>
 
@@ -1284,7 +1344,8 @@
                 </div>
 
                 <!-- Page Navigation Controls -->
-                <div class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
+                <div
+                    class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
                     <button onclick="turnToPage(1)"
                         class="text-stone-700 hover:text-paper-red font-bold flex items-center gap-1 cursor-pointer min-h-[36px]">
                         <span data-i18n="prev_page_prompt">⮌ Return to Page 1: Profile</span>
@@ -1345,21 +1406,29 @@
                         data-category="backend">
                         <div>
                             <div class="flex justify-between items-start border-b border-paper-border pb-2 mb-2">
-                                <span class="font-typewriter text-[11px] font-bold text-paper-red" data-i18n="proj0_eyebrow">EXHIBIT NO. 00 • ENTERPRISE ARCHITECTURE</span>
-                                <span class="font-typewriter text-[11px] text-stone-600 font-bold" data-i18n="proj0_client">PT MULYA KENCANA</span>
+                                <span class="font-typewriter text-[11px] font-bold text-paper-red"
+                                    data-i18n="proj0_eyebrow">EXHIBIT NO. 00 • ENTERPRISE ARCHITECTURE</span>
+                                <span class="font-typewriter text-[11px] text-stone-600 font-bold"
+                                    data-i18n="proj0_client">PT MULYA KENCANA</span>
                             </div>
 
-                            <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1" data-i18n="proj0_title">
+                            <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1"
+                                data-i18n="proj0_title">
                                 Enterprise ERP Modernization & Delphi Refactoring
                             </h3>
 
                             <p class="font-body text-sm text-stone-800 leading-relaxed mb-3" data-i18n="proj0_desc">
-                                Refactored legacy Delphi monolith procedures into modular Node.js microservices. Integrated connection pooling, idempotent transaction logs, and real-time WhatsApp dispatch pipelines for factory operations.
+                                Refactored legacy Delphi monolith procedures into modular Node.js microservices.
+                                Integrated connection pooling, idempotent transaction logs, and real-time WhatsApp
+                                dispatch pipelines for factory operations.
                             </p>
 
-                            <div class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
-                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:</div>
-                                <p class="text-stone-700" data-i18n="proj0_benchmark">Query latency dropped from 1,450ms to 68ms (95% faster) with zero deadlock across 500+ terminal sessions.</p>
+                            <div
+                                class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
+                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:
+                                </div>
+                                <p class="text-stone-700" data-i18n="proj0_benchmark">Query latency dropped from 1,450ms
+                                    to 68ms (95% faster) with zero deadlock across 500+ terminal sessions.</p>
                             </div>
                         </div>
 
@@ -1367,12 +1436,14 @@
                             <div class="flex flex-wrap gap-1 text-[11px] font-typewriter mb-3">
                                 <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Node.js</span>
                                 <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">PostgreSQL</span>
-                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Delphi Refactor</span>
+                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Delphi
+                                    Refactor</span>
                                 <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">WhatsApp API</span>
                             </div>
 
                             <div class="pt-2 border-t border-paper-border flex justify-between items-center">
-                                <span class="font-typewriter text-xs text-stone-600 font-bold" data-i18n="status_production">STATUS: PRODUCTION</span>
+                                <span class="font-typewriter text-xs text-stone-600 font-bold"
+                                    data-i18n="status_production">STATUS: PRODUCTION</span>
                                 <button onclick="openProjectModal('erp_modernization')"
                                     class="font-typewriter text-xs font-bold bg-paper-red text-white hover:bg-stone-900 py-1.5 px-3 transition-colors flex items-center gap-1 cursor-pointer min-h-[34px]">
                                     <span data-i18n="view_exhibit_btn">READ FULL DISPATCH & ARCHITECTURE</span>
@@ -1387,8 +1458,10 @@
                         data-category="backend">
                         <div>
                             <div class="flex justify-between items-start border-b border-paper-border pb-2 mb-2">
-                                <span class="font-typewriter text-[11px] font-bold text-paper-red" data-i18n="proj1_eyebrow">EXHIBIT NO. 01 • GEOSPATIAL BACKEND</span>
-                                <span class="font-typewriter text-[11px] text-stone-600 font-bold" data-i18n="proj1_client">PT MULYA KENCANA</span>
+                                <span class="font-typewriter text-[11px] font-bold text-paper-red"
+                                    data-i18n="proj1_eyebrow">EXHIBIT NO. 01 • GEOSPATIAL BACKEND</span>
+                                <span class="font-typewriter text-[11px] text-stone-600 font-bold"
+                                    data-i18n="proj1_client">PT MULYA KENCANA</span>
                             </div>
 
                             <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1"
@@ -1404,8 +1477,10 @@
 
                             <div
                                 class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
-                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:</div>
-                                <p class="text-stone-700" data-i18n="proj1_benchmark">Calculates deterministic mileage with &lt; 1.5% road-deviation
+                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:
+                                </div>
+                                <p class="text-stone-700" data-i18n="proj1_benchmark">Calculates deterministic mileage
+                                    with &lt; 1.5% road-deviation
                                     error, saving 80% manual reconciliation time.</p>
                             </div>
                         </div>
@@ -1419,7 +1494,8 @@
                             </div>
 
                             <div class="pt-2 border-t border-paper-border flex justify-between items-center">
-                                <span class="font-typewriter text-xs text-stone-600 font-bold" data-i18n="status_production">STATUS: PRODUCTION</span>
+                                <span class="font-typewriter text-xs text-stone-600 font-bold"
+                                    data-i18n="status_production">STATUS: PRODUCTION</span>
                                 <button onclick="openProjectModal('valhalla')"
                                     class="font-typewriter text-xs font-bold bg-paper-border text-paper-light hover:bg-paper-red py-1.5 px-3 transition-colors flex items-center gap-1 cursor-pointer min-h-[34px]">
                                     <span data-i18n="view_exhibit_btn">READ FULL DISPATCH & ARCHITECTURE</span>
@@ -1434,8 +1510,10 @@
                         data-category="analytics">
                         <div>
                             <div class="flex justify-between items-start border-b border-paper-border pb-2 mb-2">
-                                <span class="font-typewriter text-[11px] font-bold text-paper-red" data-i18n="proj2_eyebrow">EXHIBIT NO. 02 • DATA LAKE & SOURCING</span>
-                                <span class="font-typewriter text-[11px] text-stone-600 font-bold" data-i18n="proj2_client">DIMY TECH</span>
+                                <span class="font-typewriter text-[11px] font-bold text-paper-red"
+                                    data-i18n="proj2_eyebrow">EXHIBIT NO. 02 • DATA LAKE & SOURCING</span>
+                                <span class="font-typewriter text-[11px] text-stone-600 font-bold"
+                                    data-i18n="proj2_client">DIMY TECH</span>
                             </div>
 
                             <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1"
@@ -1451,8 +1529,10 @@
 
                             <div
                                 class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
-                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:</div>
-                                <p class="text-stone-700" data-i18n="proj2_benchmark">Sub-second analytical queries across 3.5M+ procurement records; accelerated RFQ cycles by 40%.</p>
+                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:
+                                </div>
+                                <p class="text-stone-700" data-i18n="proj2_benchmark">Sub-second analytical queries
+                                    across 3.5M+ procurement records; accelerated RFQ cycles by 40%.</p>
                             </div>
                         </div>
 
@@ -1466,7 +1546,8 @@
                             </div>
 
                             <div class="pt-2 border-t border-paper-border flex justify-between items-center">
-                                <span class="font-typewriter text-xs text-stone-600 font-bold" data-i18n="status_deployed">STATUS: DEPLOYED</span>
+                                <span class="font-typewriter text-xs text-stone-600 font-bold"
+                                    data-i18n="status_deployed">STATUS: DEPLOYED</span>
                                 <button onclick="openProjectModal('procurement')"
                                     class="font-typewriter text-xs font-bold bg-paper-border text-paper-light hover:bg-paper-red py-1.5 px-3 transition-colors flex items-center gap-1 cursor-pointer min-h-[34px]">
                                     <span data-i18n="view_exhibit_btn">READ FULL DISPATCH & ARCHITECTURE</span>
@@ -1481,8 +1562,10 @@
                         data-category="fullstack">
                         <div>
                             <div class="flex justify-between items-start border-b border-paper-border pb-2 mb-2">
-                                <span class="font-typewriter text-[11px] font-bold text-paper-red" data-i18n="proj3_eyebrow">EXHIBIT NO. 03 • DEV TOOLING</span>
-                                <span class="font-typewriter text-[11px] text-stone-600 font-bold" data-i18n="proj3_client">MILLENNIA SOLUSI</span>
+                                <span class="font-typewriter text-[11px] font-bold text-paper-red"
+                                    data-i18n="proj3_eyebrow">EXHIBIT NO. 03 • DEV TOOLING</span>
+                                <span class="font-typewriter text-[11px] text-stone-600 font-bold"
+                                    data-i18n="proj3_client">MILLENNIA SOLUSI</span>
                             </div>
 
                             <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1"
@@ -1498,8 +1581,10 @@
 
                             <div
                                 class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
-                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:</div>
-                                <p class="text-stone-700" data-i18n="proj3_benchmark">Eliminated third-party per-seat licensing fees while achieving sub-120ms interaction speeds.</p>
+                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:
+                                </div>
+                                <p class="text-stone-700" data-i18n="proj3_benchmark">Eliminated third-party per-seat
+                                    licensing fees while achieving sub-120ms interaction speeds.</p>
                             </div>
                         </div>
 
@@ -1512,7 +1597,8 @@
                             </div>
 
                             <div class="pt-2 border-t border-paper-border flex justify-between items-center">
-                                <span class="font-typewriter text-xs text-stone-600 font-bold" data-i18n="status_internal">STATUS: INTERNAL USE</span>
+                                <span class="font-typewriter text-xs text-stone-600 font-bold"
+                                    data-i18n="status_internal">STATUS: INTERNAL USE</span>
                                 <button onclick="openProjectModal('jira')"
                                     class="font-typewriter text-xs font-bold bg-paper-border text-paper-light hover:bg-paper-red py-1.5 px-3 transition-colors flex items-center gap-1 cursor-pointer min-h-[34px]">
                                     <span data-i18n="view_exhibit_btn">READ FULL DISPATCH & ARCHITECTURE</span>
@@ -1527,8 +1613,10 @@
                         data-category="analytics">
                         <div>
                             <div class="flex justify-between items-start border-b border-paper-border pb-2 mb-2">
-                                <span class="font-typewriter text-[11px] font-bold text-paper-red" data-i18n="proj4_eyebrow">EXHIBIT NO. 04 • UTILITY CMS</span>
-                                <span class="font-typewriter text-[11px] text-stone-600 font-bold" data-i18n="proj4_client">CHARISMA PERSADA</span>
+                                <span class="font-typewriter text-[11px] font-bold text-paper-red"
+                                    data-i18n="proj4_eyebrow">EXHIBIT NO. 04 • UTILITY CMS</span>
+                                <span class="font-typewriter text-[11px] text-stone-600 font-bold"
+                                    data-i18n="proj4_client">CHARISMA PERSADA</span>
                             </div>
 
                             <h3 class="font-headline font-bold text-2xl text-paper-ink leading-snug mb-1"
@@ -1543,21 +1631,26 @@
 
                             <div
                                 class="p-2.5 bg-paper-aged/50 border border-paper-border font-typewriter text-xs space-y-1">
-                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:</div>
-                                <p class="text-stone-700" data-i18n="proj4_benchmark">Decreased regional utility billing calculation discrepancy to 0.0% through automated audit rules.</p>
+                                <div class="font-bold text-paper-red" data-i18n="core_benchmark_label">CORE BENCHMARK:
+                                </div>
+                                <p class="text-stone-700" data-i18n="proj4_benchmark">Decreased regional utility billing
+                                    calculation discrepancy to 0.0% through automated audit rules.</p>
                             </div>
                         </div>
 
                         <div>
                             <div class="flex flex-wrap gap-1 text-[11px] font-typewriter mb-3">
-                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">PHP / Laravel</span>
+                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">PHP /
+                                    Laravel</span>
                                 <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">MySQL</span>
                                 <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">CMS Engine</span>
-                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Utility Telemetry</span>
+                                <span class="bg-paper-aged border border-paper-border px-1.5 py-0.5">Utility
+                                    Telemetry</span>
                             </div>
 
                             <div class="pt-2 border-t border-paper-border flex justify-between items-center">
-                                <span class="font-typewriter text-xs text-stone-600 font-bold" data-i18n="status_delivered">STATUS: DELIVERED</span>
+                                <span class="font-typewriter text-xs text-stone-600 font-bold"
+                                    data-i18n="status_delivered">STATUS: DELIVERED</span>
                                 <button onclick="openProjectModal('meter')"
                                     class="font-typewriter text-xs font-bold bg-paper-border text-paper-light hover:bg-paper-red py-1.5 px-3 transition-colors flex items-center gap-1 cursor-pointer min-h-[34px]">
                                     <span data-i18n="view_exhibit_btn">READ FULL DISPATCH & ARCHITECTURE</span>
@@ -1570,7 +1663,8 @@
                 </div>
 
                 <!-- Page Navigation Controls -->
-                <div class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
+                <div
+                    class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
                     <button onclick="turnToPage(2)"
                         class="text-stone-700 hover:text-paper-red font-bold flex items-center gap-1 cursor-pointer min-h-[36px]">
                         <span data-i18n="prev_page_prompt_2">⮌ Return to Page 2: Experience</span>
@@ -1605,7 +1699,8 @@
                                 CLASSIFIEDS, CREDENTIALS & LETTER TO THE EDITOR
                             </h2>
                         </div>
-                        <div class="font-typewriter text-xs text-stone-600 max-w-xs text-right hidden md:block" data-i18n="classified_subquote">
+                        <div class="font-typewriter text-xs text-stone-600 max-w-xs text-right hidden md:block"
+                            data-i18n="classified_subquote">
                             "Direct communication channels, academic credentials, and interactive editorial puzzle."
                         </div>
                     </div>
@@ -1627,24 +1722,34 @@
                         <!-- Education Box 1 -->
                         <div class="border border-paper-border p-3.5 bg-paper-light space-y-1">
                             <div class="flex justify-between items-start">
-                                <span class="font-headline font-bold text-lg text-paper-ink" data-i18n="edu_unibi_degree">Bachelor of Information Systems</span>
-                                <span class="font-typewriter text-xs font-bold bg-paper-aged px-1.5 py-0.5 tabular-nums">2020 – 2024</span>
+                                <span class="font-headline font-bold text-lg text-paper-ink"
+                                    data-i18n="edu_unibi_degree">Bachelor of Information Systems</span>
+                                <span
+                                    class="font-typewriter text-xs font-bold bg-paper-aged px-1.5 py-0.5 tabular-nums">2020
+                                    – 2024</span>
                             </div>
-                            <p class="font-typewriter text-xs text-stone-700 font-bold" data-i18n="edu_unibi_school">Universitas Informatika dan Bisnis Indonesia (UNIBI)</p>
+                            <p class="font-typewriter text-xs text-stone-700 font-bold" data-i18n="edu_unibi_school">
+                                Universitas Informatika dan Bisnis Indonesia (UNIBI)</p>
                             <p class="font-body text-xs text-stone-800 pt-1 leading-snug" data-i18n="edu_unibi_desc">
-                                Focused on enterprise software engineering, database management, cloud systems, and IT project governance.
+                                Focused on enterprise software engineering, database management, cloud systems, and IT
+                                project governance.
                             </p>
                         </div>
 
                         <!-- Education Box 2 -->
                         <div class="border border-paper-border p-3.5 bg-paper-light space-y-1">
                             <div class="flex justify-between items-start">
-                                <span class="font-headline font-bold text-base text-paper-ink" data-i18n="edu_smk_degree">Software Engineering</span>
-                                <span class="font-typewriter text-xs font-bold bg-paper-aged px-1.5 py-0.5 tabular-nums">2017 – 2020</span>
+                                <span class="font-headline font-bold text-base text-paper-ink"
+                                    data-i18n="edu_smk_degree">Software Engineering</span>
+                                <span
+                                    class="font-typewriter text-xs font-bold bg-paper-aged px-1.5 py-0.5 tabular-nums">2017
+                                    – 2020</span>
                             </div>
-                            <p class="font-typewriter text-xs text-stone-700 font-bold" data-i18n="edu_smk_school">SMK Negeri 1 Cimahi</p>
+                            <p class="font-typewriter text-xs text-stone-700 font-bold" data-i18n="edu_smk_school">SMK
+                                Negeri 1 Cimahi</p>
                             <p class="font-body text-xs text-stone-800 pt-1 leading-snug" data-i18n="edu_smk_desc">
-                                Rigorous vocational foundation in algorithms, structured programming, web architecture, and Git versioning.
+                                Rigorous vocational foundation in algorithms, structured programming, web architecture,
+                                and Git versioning.
                             </p>
                         </div>
 
@@ -1656,7 +1761,8 @@
                                 ★ POSITION AVAILABLE ★
                             </div>
                             <p class="text-xs text-stone-900 leading-snug" data-i18n="classified_ad_desc">
-                                EXPERIENCED FULLSTACK & BACKEND ENGINEER with deep Node.js, Go, React, and PostgreSQL expertise open to impactful engineering challenges worldwide.
+                                EXPERIENCED FULLSTACK & BACKEND ENGINEER with deep Node.js, Go, React, and PostgreSQL
+                                expertise open to impactful engineering challenges worldwide.
                             </p>
                             <a href="mailto:mfazayujahid@gmail.com"
                                 class="inline-block bg-paper-border text-paper-light hover:bg-paper-red font-bold text-xs py-2 px-4 uppercase transition-colors min-h-[36px]">
@@ -1673,11 +1779,13 @@
                         <div
                             class="border-b-2 border-stone-800 pb-1 font-typewriter text-xs font-bold uppercase flex justify-between items-baseline">
                             <span data-i18n="puzzle_col_title">THE DAILY CODER'S PUZZLE</span>
-                            <span class="text-paper-red font-bold tabular-nums" id="puzzle-issue-tag">DISPATCH #84</span>
+                            <span class="text-paper-red font-bold tabular-nums" id="puzzle-issue-tag">DISPATCH
+                                #84</span>
                         </div>
 
                         <p class="font-body text-xs text-stone-800 leading-snug italic" data-i18n="puzzle_intro">
-                            Test your engineering acumen! 3 random clues pulled fresh from our 10-question editorial vault. Type directly into the letter boxes.
+                            Test your engineering acumen! 3 random clues pulled fresh from our 10-question editorial
+                            vault. Type directly into the letter boxes.
                         </p>
 
                         <!-- Dynamic Crossword Input Fields Container -->
@@ -1721,7 +1829,8 @@
                         </div>
 
                         <p class="font-body text-xs text-stone-800 leading-snug" data-i18n="contact_intro">
-                            Have an enterprise engineering opportunity, full-stack project, or strategic technical collaboration? Dispatch a direct telegram to Faza's desk.
+                            Have an enterprise engineering opportunity, full-stack project, or strategic technical
+                            collaboration? Dispatch a direct telegram to Faza's desk.
                         </p>
 
                         <!-- Authentic Newspaper Mailto Contact Form -->
@@ -1732,8 +1841,7 @@
                                     data-i18n="form_name_label">
                                     YOUR NAME / ORGANIZATION:
                                 </label>
-                                <input type="text" id="contact-name" required
-                                    placeholder="e.g. Alex, VP of Engineering"
+                                <input type="text" id="contact-name" required placeholder="e.g. Alex, VP of Engineering"
                                     class="w-full bg-white border border-paper-border p-2 focus:outline-none focus:border-paper-red text-stone-900" />
                             </div>
 
@@ -1764,9 +1872,14 @@
 
                         <!-- Alternate Contact Direct Lines (Phone number removed) -->
                         <div class="border border-paper-border p-3 bg-paper-aged/30 font-typewriter text-xs space-y-1">
-                            <p><strong data-i18n="direct_desk_label">DIRECT DESK:</strong> <span data-i18n="direct_desk_val">Bandung, West Java, ID</span></p>
-                            <p><strong data-i18n="direct_email_label">ELECTRONIC MAIL:</strong> <a href="mailto:mfazayujahid@gmail.com" class="underline hover:text-paper-red">mfazayujahid@gmail.com</a></p>
-                            <p><strong data-i18n="direct_github_label">GITHUB PROFILE:</strong> <a href="https://github.com/mfazayujahid" target="_blank" rel="noopener noreferrer" class="underline hover:text-paper-red">github.com/mfazayujahid</a></p>
+                            <p><strong data-i18n="direct_desk_label">DIRECT DESK:</strong> <span
+                                    data-i18n="direct_desk_val">Bandung, West Java, ID</span></p>
+                            <p><strong data-i18n="direct_email_label">ELECTRONIC MAIL:</strong> <a
+                                    href="mailto:mfazayujahid@gmail.com"
+                                    class="underline hover:text-paper-red">mfazayujahid@gmail.com</a></p>
+                            <p><strong data-i18n="direct_github_label">GITHUB PROFILE:</strong> <a
+                                    href="https://github.com/mfazayujahid" target="_blank" rel="noopener noreferrer"
+                                    class="underline hover:text-paper-red">github.com/mfazayujahid</a></p>
                         </div>
 
                     </div>
@@ -1774,7 +1887,8 @@
                 </div>
 
                 <!-- Page Navigation Controls -->
-                <div class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
+                <div
+                    class="border-t-2 border-paper-border pt-3 flex justify-between items-center font-typewriter text-xs">
                     <button onclick="turnToPage(3)"
                         class="text-stone-700 hover:text-paper-red font-bold flex items-center gap-1 cursor-pointer min-h-[36px]">
                         <span data-i18n="prev_page_prompt_3">⮌ Return to Page 3: Portfolio</span>
@@ -1795,8 +1909,10 @@
         <footer class="mt-8 pt-4 border-t-4 border-paper-border font-typewriter text-xs">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                 <div>
-                    <p class="font-bold uppercase tracking-wider" data-i18n="footer_title">THE FAZA CHRONICLE • EST. 2026</p>
-                    <p class="text-stone-600 text-[11px]" data-i18n="footer_credits">Engineered with HTML5, Tailwind CSS, Lucide Icons, Lenis & Anime.js.</p>
+                    <p class="font-bold uppercase tracking-wider" data-i18n="footer_title">THE FAZA CHRONICLE • EST.
+                        2026</p>
+                    <p class="text-stone-600 text-[11px]" data-i18n="footer_credits">Engineered with HTML5, Tailwind
+                        CSS, Lucide Icons, Lenis & Anime.js.</p>
                 </div>
 
                 <!-- Persistent Page Number Controls -->
@@ -1816,8 +1932,8 @@
                 </div>
 
                 <div class="text-[11px] text-stone-600 text-center md:text-right">
-                    <a href="ref/CV - Muhammad Faza Yujahid.pdf" download="CV - Muhammad Faza Yujahid.pdf" target="_blank" rel="noopener noreferrer"
-                        class="underline hover:text-paper-red font-bold">
+                    <a href="ref/CV - Muhammad Faza Yujahid.pdf" download="CV - Muhammad Faza Yujahid.pdf"
+                        target="_blank" rel="noopener noreferrer" class="underline hover:text-paper-red font-bold">
                         <span data-i18n="download_cv_full">DOWNLOAD CURRICULUM VITAE (PDF)</span>
                     </a>
                     <p class="mt-0.5" data-i18n="footer_location">Bandung • Indonesia • Available Globally</p>
@@ -1832,11 +1948,7 @@
     <!-- ENHANCED ARCHITECTURAL CASE STUDY MODAL                   -->
     <!-- Includes Bottleneck Analysis, Schematic Blueprint, & KPIs -->
     <!-- ======================================================== -->
-    <div id="project-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-        data-lenis-prevent
+    <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" data-lenis-prevent
         class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 opacity-0 transition-opacity duration-300">
         <div class="bg-paper-light border-4 border-paper-border max-w-3xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-8 shadow-paper-deep relative transform scale-95 transition-transform duration-300 overscroll-contain"
             id="project-modal-content" data-lenis-prevent>
@@ -1851,7 +1963,8 @@
             <!-- Modal Header -->
             <div class="border-b-2 border-paper-border pb-3 mb-4 pr-8">
                 <span id="modal-eyebrow"
-                    class="font-typewriter text-xs font-bold text-paper-red tracking-wider uppercase">ARCHITECTURAL EXHIBIT</span>
+                    class="font-typewriter text-xs font-bold text-paper-red tracking-wider uppercase">ARCHITECTURAL
+                    EXHIBIT</span>
                 <h3 id="modal-title"
                     class="font-headline font-bold text-2xl sm:text-3xl text-paper-ink leading-tight mt-1">
                     Project Case Study
@@ -1871,13 +1984,15 @@
                         LEGACY SYSTEM CONSTRAINT & BOTTLENECK:
                     </h4>
                     <p id="modal-bottleneck-text" class="font-body text-stone-800">
-                        Description of the failure mode, query timeout, or concurrency ceiling in the previous architecture.
+                        Description of the failure mode, query timeout, or concurrency ceiling in the previous
+                        architecture.
                     </p>
                 </div>
 
                 <!-- 2. Visual Architecture Schematic / Blueprint (Hidden as requested) -->
                 <div id="modal-blueprint-section" class="hidden">
-                    <h4 class="font-headline font-bold text-base text-paper-ink uppercase tracking-wide border-b border-paper-border pb-0.5 mb-1.5 flex items-center gap-1.5">
+                    <h4
+                        class="font-headline font-bold text-base text-paper-ink uppercase tracking-wide border-b border-paper-border pb-0.5 mb-1.5 flex items-center gap-1.5">
                         <i data-lucide="git-branch" class="w-4 h-4 text-paper-red"></i>
                         <span data-i18n="modal_schematic_title">SYSTEM ARCHITECTURE BLUEPRINT:</span>
                     </h4>
@@ -1898,7 +2013,8 @@
                 </div>
 
                 <!-- 4. Quantifiable Benchmarks & Measurable Outcomes -->
-                <div class="border-rule-thick-thin py-2.5 px-3 bg-paper-aged/50 font-typewriter text-xs space-y-1.5 tabular-nums">
+                <div
+                    class="border-rule-thick-thin py-2.5 px-3 bg-paper-aged/50 font-typewriter text-xs space-y-1.5 tabular-nums">
                     <div class="font-bold text-paper-red uppercase flex items-center gap-1" data-i18n="modal_impact">
                         <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
                         <span>MEASURABLE OUTCOME & BENCHMARKS:</span>
@@ -2492,8 +2608,8 @@
                 icon.setAttribute('data-lucide', tickerPaused ? 'play' : 'pause');
             }
             if (statusText) {
-                statusText.textContent = tickerPaused ? 
-                    (currentLanguage === 'id' ? 'PUTAR' : 'RESUME') : 
+                statusText.textContent = tickerPaused ?
+                    (currentLanguage === 'id' ? 'PUTAR' : 'RESUME') :
                     (currentLanguage === 'id' ? 'JEDA' : 'PAUSE');
             }
             if (window.lucide) lucide.createIcons();
@@ -2551,8 +2667,8 @@
             sfxEnabled = !sfxEnabled;
             const statusEl = document.getElementById('sfx-status');
             if (statusEl) {
-                statusEl.textContent = sfxEnabled ? 
-                    (currentLanguage === 'id' ? "SFX: AKTIF" : "SFX: ON") : 
+                statusEl.textContent = sfxEnabled ?
+                    (currentLanguage === 'id' ? "SFX: AKTIF" : "SFX: ON") :
                     (currentLanguage === 'id' ? "SFX: NONAKTIF" : "SFX: OFF");
             }
             const icon = document.getElementById('sfx-icon');
